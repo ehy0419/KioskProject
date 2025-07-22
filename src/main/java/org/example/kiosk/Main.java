@@ -27,25 +27,29 @@ public class Main {
 
             if (burgerNumber == 0) {
                 System.out.println("메뉴 선택을 종료합니다.");
+                break;  // 무한 루프 조심!
             }
-            break;  // 무한 루프 조심!
+            // break - if 문 밖에 있으면 도달할 수 없는 문구 오류 발생
+
+            // 메뉴
+            switch (burgerNumber) {
+                case 1:
+                    System.out.println();
+                    break;
+                case 2:
+                    System.out.println();
+                    break;
+                case 3:
+                    System.out.println();
+                    break;
+                case 4:
+                    System.out.println();
+                    break;
+
+            }
+
         }
 
-        // 메뉴
-        switch (burgerNumber) {
-            case 1:
-                System.out.println();
-                break;
-            case 2:
-                System.out.println();
-                break;
-            case 3:
-                System.out.println();
-                break;
-            case 4:
-                System.out.println();
-                break;
 
-        }
     }
 }
