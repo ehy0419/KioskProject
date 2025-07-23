@@ -1,5 +1,8 @@
 package org.example.v3;
 
+import java.util.List;
+import java.util.Scanner;
+
 public class Kiosk {
 
     ///  lv2.main 함수에서 관리하던 전체 순서 제어를 이 클래스에서 관리한다.
@@ -22,5 +25,6 @@ public class Kiosk {
     // 흐름 제어 담당. 프로그램 순서 및 흐름 제어를 담당하는 클래스
     // 사용자 입력 처리 및 메뉴 목록 출력
 
-
+    List<MenuItem> menuItems;
+    Scanner scanner = new Scanner(System.in);
 }
