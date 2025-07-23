@@ -1,4 +1,4 @@
-package org.example.kiosk;
+package org.example.lv1;
 
 import java.util.Scanner;
 
@@ -7,8 +7,6 @@ public class Main {
 
         /// 클래스 정의
         // 프로그램 시작 지점이 되는 클래스
-
-        Kiosk kiosk = new Kiosk();
 
         // 작동 확인
         Scanner scanner = new Scanner(System.in);
@@ -24,6 +22,9 @@ public class Main {
 
             System.out.print("원하는 메뉴를 선택하세요(번호): ");
             int burgerNumber = scanner.nextInt();
+            // 1. int 기본형 nextInt 로 받고 숫자로 처리 (선택)
+//            String input = sc1.next();
+            // 2. 문자열로 받으려면,   equals() 사용하기
 
             if (burgerNumber == 0) {
                 System.out.println("메뉴 선택을 종료합니다.");
@@ -34,17 +35,18 @@ public class Main {
             // 메뉴
             switch (burgerNumber) {
                 case 1:
-                    System.out.println();
+                    System.out.println("1. ShackBurger   | W 6.9 | 토마토, 양상추, 쉑소스가 토핑된 치즈버거");
                     break;
                 case 2:
-                    System.out.println();
+                    System.out.println("2. SmokeShack    | W 8.9 | 베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거");
                     break;
                 case 3:
-                    System.out.println();
+                    System.out.println("3. Cheeseburger  | W 6.9 | 포테이토 번과 비프패티, 치즈가 토핑된 치즈버거");
                     break;
                 case 4:
-                    System.out.println();
+                    System.out.println("4. Hamburger     | W 5.4 | 비프패티를 기반으로 야채가 들어간 기본버거");
                     break;
+
 
             }
 

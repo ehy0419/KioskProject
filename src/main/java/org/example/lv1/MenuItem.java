@@ -1,4 +1,4 @@
-package org.example.kiosk;
+package org.example.lv1;
 
 public class MenuItem {
 
@@ -10,9 +10,9 @@ public class MenuItem {
     // 예시 : ShackBurger, 6.9, 토마토, 양상추, 쉑소스가 토핑된 치즈버거
     // new MenuItem("ShackBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거")
 
-    MenuItem(String name, double price, String description) {
+//    public MenuItem(String name, double price, String description) {
 //        this.name = name;
 //        this.price = price;
 //        this.description = description;
-    }
+//    }
 }
