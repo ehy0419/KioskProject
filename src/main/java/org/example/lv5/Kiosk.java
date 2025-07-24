@@ -1,23 +1,26 @@
-package org.example.lv4;
-
-import org.example.lv4_footnoted.Menu;
-import org.example.lv4_footnoted.MenuItem;
+package org.example.lv5;
 
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Kiosk {
+    Scanner sc2 = new Scanner(System.in);
+
     private List<Menu> menus;
 
-        Scanner sc2 = new Scanner(System.in);
+    ///  menus 는 prviate상태에서는 외부에서 직접 수정 불가
 
     public Kiosk(List<Menu> menus) {
+
         this.menus = menus;
     }
 
-
     public void start() {
+
+        ///  start 메서드를 통해서만 메뉴를 출력 및 선택할 수 있다
+        // 사용자는 내부 구조는 몰라도 이 메서드를 사용해 이용할 수 있다.
+
         while (true) {
 
             System.out.println("\n[SHAKESHACK MENU CATEGORIES]");
@@ -80,9 +83,8 @@ public class Kiosk {
                     selectedItem.getName(),
                     selectedItem.getPrice(),
                     selectedItem.getDescription());
-        }
+        } // while 끝
 
         sc2.close();
     }
-
 }
