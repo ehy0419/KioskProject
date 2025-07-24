@@ -25,6 +25,25 @@ public class Kiosk {
     // 흐름 제어 담당. 프로그램 순서 및 흐름 제어를 담당하는 클래스
     // 사용자 입력 처리 및 메뉴 목록 출력
 
+    // 메뉴 목록
     List<MenuItem> menuItems;
-    Scanner scanner = new Scanner(System.in);
+    // 입력 스캐너
+    Scanner sc1 = new Scanner(System.in);
+
+    public Kiosk(List<MenuItem> menuItems) {
+        this.menuItems = menuItems;  // 생성 시 메뉴 목록 전달받기
+    }
+
+    ///  start 실행 메서드
+    // 메뉴를 반복 출력하고 사용자의 입력을 처리하기
+
+    public void start() {
+        while (true) {
+            System.out.println("\n[SHAKESHACK MENU]");
+            for (int i = 0; i < menuItems.size(); i++) {
+
+            }
+        }
+    }
+
 }

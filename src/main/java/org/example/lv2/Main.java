@@ -43,6 +43,20 @@ public class Main {
                         menuItems.get(i).getPrice(),
                         menuItems.get(i).getDescription());
             }
+
+            /// 코드 분석
+            // prinf : print formatted
+            // 문자열 안에 있는 포맷 기호(%d, %s 등)에 따라 값을 지정된 형식으로 출력한다
+
+            /// 문자열 안에 있는 포맷 기호
+            // %d | %-15s | %.1f | %s | %n
+            // %d       |   정수 (숫자) 출력                → i + 1 (메뉴 번호)
+            // %-15s    |   왼쪽 정렬된 문자열, 15칸 폭 확보  → item.getName() (메뉴 이름)
+            // %.1f     |   소수점 첫째 자리까지 출력하는 실수 → item.getPrice() (가격)
+            // %s       |   문자열 출력                    → item.getDescription() (설명)
+            // %n       |   줄바꿈 (운영체제에 따라 자동 처리)
+
+
             System.out.println("0. exit           | exit  | 0을 입력시 종료");
 
             System.out.print("원하는 메뉴를 선택하세요(번호): ");
