@@ -1,4 +1,4 @@
-package org.example.v3;
+package org.example.lv3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,5 +39,8 @@ public class Main {
         // Kiosk 객체 생성 후 start() 함수 생성
         // start 메서드 추가
         // Kiosk 클래스에도 같은 생성자 만들기!
+
+        Kiosk kiosk = new Kiosk(menuItems);
+        kiosk.start();
     }
 }

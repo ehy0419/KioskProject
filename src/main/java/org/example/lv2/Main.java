@@ -73,6 +73,9 @@ public class Main {
 
                 if (burgerNumber >= 1 && burgerNumber <= menuItems.size()) {
                     MenuItem selected = menuItems.get(burgerNumber - 1);
+
+                    /// 리스트 list 인덱스는 0부터 시작한다 그러므로 선택 번호에 - 1
+
                     System.out.printf("선택하신 메뉴: %s | W %.1f | %s%n",
                             selected.getName(),
                             selected.getPrice(),
